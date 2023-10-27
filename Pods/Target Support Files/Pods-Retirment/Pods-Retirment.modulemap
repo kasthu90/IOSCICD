@@ -1,0 +1,6 @@
+framework module Pods_Retirment {
+  umbrella header "Pods-Retirment-umbrella.h"
+
+  export *
+  module * { export * }
+}

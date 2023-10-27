@@ -1,0 +1,6 @@
+framework module Pods_RetirmentTests {
+  umbrella header "Pods-RetirmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
