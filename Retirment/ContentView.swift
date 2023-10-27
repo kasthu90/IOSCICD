@@ -6,16 +6,28 @@
 //
 
 import SwiftUI
+import AppCenterCrashes
+import AppCenterAnalytics
 
 struct ContentView: View {
+    @State private var email: String = ""
+    @State private var age: String = ""
+    @State private var name: String = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            VStack {
+                TextField("Email", text: $email)
+                    .textInputAutocapitalization(.never)
+                TextField("Age", text: $age)
+                TextField("Name", text: $name)
+                Spacer()
+                Button("calculate"){
+                    //Crashes.generateTestCrash()
+                    Analytics.trackEvent("calculate_retirement_amount")
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 

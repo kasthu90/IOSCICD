@@ -5,7 +5,7 @@
 //  Created by Kasthuri Tandavarayane on 27/10/2023.
 //
 
-import Foundation
+
 import UIKit
 import AppCenter
 import AppCenterCrashes
@@ -17,7 +17,7 @@ class AppDelegate:  NSObject, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         AppCenter.start(withAppSecret: "7b9126dc-d2a8-4aaa-b561-4127f81498d6", services: [Analytics.self, Crashes.self])
-        
+       // Crashes.generateTestCrash()
         return true
       
     }

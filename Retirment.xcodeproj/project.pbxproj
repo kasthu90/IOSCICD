@@ -126,11 +126,11 @@
 		56DA7AF62AEB358700E94F50 /* Retirment */ = {
 			isa = PBXGroup;
 			children = (
+				56DA7B212AEB3DDD00E94F50 /* AppDelegate.swift */,
 				56DA7AF72AEB358700E94F50 /* RetirmentApp.swift */,
 				56DA7AF92AEB358700E94F50 /* ContentView.swift */,
 				56DA7AFB2AEB358800E94F50 /* Assets.xcassets */,
 				56DA7AFD2AEB358800E94F50 /* Preview Content */,
-				56DA7B212AEB3DDD00E94F50 /* AppDelegate.swift */,
 			);
 			path = Retirment;
 			sourceTree = "<group>";
@@ -468,6 +468,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Retirement;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -524,6 +525,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Retirement;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
