@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var age: String = ""
     @State private var name: String = ""
+    @State private var retireage: String = ""
     var body: some View {
         ZStack{
             VStack {
@@ -20,9 +21,11 @@ struct ContentView: View {
                     .textInputAutocapitalization(.never)
                 TextField("Age", text: $age)
                 TextField("Name", text: $name)
+                TextField("Retirement age",text: $retireage)
                 Spacer()
                 Button("calculate"){
                     //Crashes.generateTestCrash()
+                    
                     Analytics.trackEvent("calculate_retirement_amount")
                     
                 }
