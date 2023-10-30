@@ -14,6 +14,7 @@ struct ContentView: View {
     @State private var age: String = ""
     @State private var name: String = ""
     @State private var retireage: String = ""
+    @State private var isButtonClicked = false
     var body: some View {
         ZStack{
             VStack {
@@ -23,13 +24,26 @@ struct ContentView: View {
                 TextField("Name", text: $name)
                 TextField("Retirement age",text: $retireage)
                 Spacer()
-                Button("calculate"){
+                Button(action:{
                     //Crashes.generateTestCrash()
-                    
                     Analytics.trackEvent("calculate_retirement_amount")
+                    isButtonClicked.toggle()
+                }) {
+                    Text("Calculate ")
                     
                 }
+                
+                
             }
+        }
+        
+        
+        
+        if isButtonClicked {
+            // Show text when the button is clicked.
+            Text("calculated sucessfully!")
+                .foregroundColor(.blue)
+                .font(.headline)
         }
     }
 }
