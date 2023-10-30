@@ -16,7 +16,7 @@ import AppCenterAnalytics
 class AppDelegate:  NSObject, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
-        AppCenter.start(withAppSecret: "7b9126dc-d2a8-4aaa-b561-4127f81498d6", services: [Analytics.self, Crashes.self])
+        AppCenter.start(withAppSecret: "5205401c-81dc-4e91-bcb1-ec8a4193ea7e", services: [Analytics.self, Crashes.self])
        // Crashes.generateTestCrash()
         return true
       
